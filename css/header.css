@@ -20,13 +20,11 @@
 	gap: 50px;
 }
 
-.header-nav__item {}
-
 .header-nav__link {
 	font-family: var(--font-accent);
 	font-weight: 700;
 	letter-spacing: 3px;
-	color: fff;
+	color: #fff;
 	transition: color 0.2s ease-in;
 }
 

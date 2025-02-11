@@ -8,7 +8,6 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	font-size: 16px;
-	line-height: 2;
 	background-color: #1f2a32;
 	color: #fafaf5;
 }
@@ -24,8 +23,18 @@ a {
 	padding: 0 15px;
 }
 
-.title {
-	font-family: var(--font-accent);
-	font-weight: 700;
-	color: var(--accent);
+.section {
+	padding: 150px 0;
+}
+
+@media (max-width: 800px) {
+	.section {
+		padding: 100px 0;
+	}
+}
+
+@media (max-width: 600px) {
+	.section {
+		padding: 80px 0;
+	}
 }

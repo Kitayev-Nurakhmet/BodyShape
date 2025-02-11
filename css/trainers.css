@@ -1,0 +1,99 @@
+.trainers__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.trainers__title {
+	max-width: 800px;
+	width: 100%;
+	font-family: var(--font-accent);
+	font-weight: 700;
+	font-size: clamp(3rem, 1.909rem + 5.45vw, 6rem);
+	letter-spacing: 0.08em;
+	color: var(--accent);
+	text-align: center;
+}
+
+.trainers__text {
+	max-width: 800px;
+	width: 100%;
+	margin-bottom: 50px;
+	font-weight: 300;
+	line-height: 2;
+	text-align: center;
+}
+
+.trainers-box {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 35px 30px;
+}
+
+.trainers-box__link {
+	position: relative;
+	display: block;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.trainers-box__link::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+	opacity: 0;
+	transition: opacity 0.2s ease-in;
+}
+
+.trainers-box__name {
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: var(--font-accent);
+	font-weight: 700;
+	font-size: 42px;
+	color: #fff;
+	text-align: center;
+	opacity: 0;
+	transition: all 0.2s ease-in;
+}
+
+.trainers-box__link:hover .trainers-box__name {
+	opacity: 1;
+	top: 50%;
+}
+
+.trainers-box__link:hover::before {
+	opacity: 1;
+}
+
+@media (max-width: 800px) {
+	.trainers__title {
+		max-width: 500px;
+	}
+
+	.trainers__text {
+		margin-bottom: 30px;
+		max-width: 650px;
+	}
+
+	.trainers-box {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 25px 20px;
+	}
+}
+
+@media (max-width: 600px) {
+	.trainers__text {
+		font-size: 14px;
+	}
+
+	.trainers-box {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+
+}
