@@ -1,0 +1,34 @@
+/* roboto-regular - latin */
+@font-face {
+	font-display: swap;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/Roboto-regular.woff2') format('woff2');
+}
+
+/* roboto-700 - latin */
+@font-face {
+	font-display: swap;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/Roboto-bold.woff2') format('woff2');
+}
+
+/* bebasneue-bold - latin */
+@font-face {
+	font-display: swap;
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/BebasNeue-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/BebasNeue-Bold.woff2') format('woff2');
+}
