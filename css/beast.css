@@ -1,0 +1,60 @@
+.beast {
+	display: flex;
+	align-items: center;
+	height: 750px;
+	background-image: image-set(url(/image/beast-bg.jpg) 1x,
+			url(/image/beast-bg@2x.jpg) 2x);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+
+	--angel: 10%;
+	clip-path: polygon(0% var(--angel), 100% 0%, 100% calc(100% - var(--angel)), 0% 100%);
+}
+
+.beast__title {
+	margin-bottom: 10px;
+	font-family: var(--font-accent);
+	font-weight: 700;
+	font-size: clamp(2.625rem, 1.25rem + 6.88vw, 4.688rem);
+	letter-spacing: 0.1em;
+	color: #fff;
+	text-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.1);
+}
+
+.beast__text {
+	margin-bottom: 30px;
+	font-size: clamp(0.875rem, 0.542rem + 1.67vw, 1.375rem);
+	line-height: 1.5;
+	color: #fff;
+}
+
+.beast__link {
+	display: inline-block;
+	padding: 18px 46px;
+	background-color: var(--accent);
+	font-family: var(--font-accent);
+	font-weight: 700;
+	font-size: 19px;
+	letter-spacing: 0.26em;
+	color: #000;
+	border-radius: 7px;
+	transition: background-color 0.2s ease-in;
+}
+
+.beast__link:hover,
+.beast__link:active {
+	background-color: #fcc54e;
+}
+
+@media (max-width: 600px) {
+	.beast {
+		height: auto;
+		padding: 100px 0;
+	}
+
+	.beast__link {
+		padding: 15px 40px;
+		font-size: 16px;
+	}
+}

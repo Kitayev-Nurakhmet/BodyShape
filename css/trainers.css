@@ -84,6 +84,10 @@
 		grid-template-columns: repeat(3, 1fr);
 		gap: 25px 20px;
 	}
+
+	.trainers-box__name {
+		font-size: 32px;
+	}
 }
 
 @media (max-width: 600px) {
@@ -95,5 +99,19 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 
+	.trainers-box__link {
+		border-radius: 10px;
+	}
 
+}
+
+@media (hover: none) and (pointer: coarse) {
+	.trainers-box__name {
+		top: 50%;
+		opacity: 1;
+	}
+
+	.trainers-box__link::before {
+		opacity: 1;
+	}
 }
