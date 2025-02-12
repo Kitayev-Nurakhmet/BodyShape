@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=	, initial-scale=1.0">
 
   <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" type="image/x-icon" href="image/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
 
   <title>BodyShape</title>
 </head>
@@ -168,7 +170,71 @@
 
         </div>
     </section>
+
+    <section class="contacts section">
+      <div class="container contacts__container">
+        <h2 class="contacts__title">НАПИСАТЬ НАМ</h2>
+
+        <form class="contacts-form" action="">
+
+          <fieldset class="contacts-form__fieldset">
+            <label class="contacts-form__label" for="name">Ваше имя</label>
+            <input class="contacts-form__input" id="name" type="text" autocomplete="off" placeholder="Введите имя"
+              required>
+          </fieldset>
+
+          <fieldset class="contacts-form__fieldset">
+            <label class="contacts-form__label" for="mail">E-mail</label>
+            <input class="contacts-form__input" id="mail" type="email" autocomplete="off" placeholder="info@mail.com"
+              required>
+          </fieldset>
+
+          <fieldset class="contacts-form__fieldset">
+            <label class="contacts-form__label" for="message">Сообщение</label>
+            <textarea class="contacts-form__input contacts-form__input_textarea" name="message" id="message"
+              rows="7"></textarea>
+          </fieldset>
+
+          <button class="contacts-form__btn" type="submit">ОТПРАВИТЬ</button>
+        </form>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="#!"><img class="footer__img" src="image/vk.svg" alt="Социальный сеть VK"></a>
+        </li>
+
+        <li class="footer__item">
+          <a class="footer__link" href="#!"><img class="footer__img" src="image/rutube.svg"
+              alt="Социальный сеть Rutube"></a>
+        </li>
+
+        <li class="footer__item">
+          <a class="footer__link" href="#!"><img class="footer__img" src="image/dzen.svg"
+              alt="Социальный сеть Dzen"></a>
+        </li>
+
+        <li class="footer__item">
+          <a class="footer__link" href="#!"><img class="footer__img" src="image/telegram.svg"
+              alt="Социальный сеть Telegram"></a>
+        </li>
+      </ul>
+
+      <address class="footer__address">
+        <p class="footer__text">г. Москва, ул. Тверская, д. 12, стр. 1</p>
+        <p class="footer__text">Россия, 125009</p>
+      </address>
+
+      <div class="footer-contacts">
+        <p class="footer__text">Телефон <a class="footer__tel" href="tel:+78001234567">+7 (800) 12 34 567</a></p>
+        <a class="footer__mail" href="mailto:info@bodyshape.ru">info@bodyshape.ru</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
