@@ -2,8 +2,7 @@
 	display: flex;
 	align-items: center;
 	height: 860px;
-	background-image: image-set(url(/image/contact-form-bg.jpg) 1x,
-			url(/image/contact-form-bg@2x.jpg) 2x);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), image-set(url(../image/contact-form-bg@2x.avif) type('image/avif') 2x, url(../image/contact-form-bg.avif) type('image/avif'), url(../image/contact-form-bg@2x.webp) type('image/webp') 2x, url(../image/contact-form-bg.webp) type('image/webp'), url(../image/contact-form-bg@2x.jpg) 2x, url(../image/contact-form-bg.jpg));
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -67,8 +66,5 @@
 @media (max-width: 800px) {
 	.contacts {
 		height: auto;
-		background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-			image-set(url(/image/contact-form-bg.jpg) 1x,
-				url(/image/contact-form-bg@2x.jpg) 2x);
 	}
 }
