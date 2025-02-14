@@ -36,4 +36,4 @@
 📸 Instagram: [@kitayev.nura](https://www.instagram.com/kitayev.nura)  
 
 ## 🖼️ Макет сайта
-![Главная страница]([https://github.com/Kitayev-Nurakhmet/BodyShape/blob/main/image/BodyShape.jpg])
+![Главная страница](https://github.com/Kitayev-Nurakhmet/BodyShape/blob/main/image/BodyShape.jpg)
